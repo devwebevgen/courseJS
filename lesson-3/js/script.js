@@ -16,7 +16,7 @@ var mainList = {
 }
 
 function start () {
-	budget = prompt("Ваш бюджет за месяц?");
+	budget = prompt("Ваш бюджет за месяц?",'');
 	magazineName = prompt("Название вашего магазина?").toUpperCase();
 	time = 19;
 
@@ -32,7 +32,7 @@ function start () {
 
 	 	} else {
 	 		console.log('Не верно! Введите заново');
-	 		--i	
+	 		--i;	
 	 		}	
 	}
 	
@@ -54,14 +54,14 @@ function chooseGoods() {
 	
 	for (let i = 0; i < 5; i++) {
 		
-		let a = prompt("Какой тип товаров будем продавать?");
+		let a = prompt("Какой тип товаров будем продавать?",'');
 		
 		if ((typeof(a)) === 'string' && a != '' && a.length < 50) {
 			console.log('Все верно!');
 			mainList.shopGoods[i] = a;
 		} else {
 			console.log('Не верно! Введите заново');
-			--i	
+			--i;
 			}	
 	}
 }

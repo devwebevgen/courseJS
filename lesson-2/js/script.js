@@ -8,7 +8,7 @@ var mainList = {
 
 for (let i = 0; i < 1; i++) {
 	
-	var budget = prompt("Ваш бюджет за месяц?");
+	var budget = prompt("Ваш бюджет за месяц?","");
 	
 	if ((typeof(budget)) === 'string' && budget != '' && budget.length < 50) {
 		console.log('Все верно!');
@@ -40,7 +40,7 @@ for (let i = 0; i < 1; i++) {
 
 for (let i = 0; i < 1; i++) {	
 	
-	var magazineName = prompt("Название вашего магазина?");
+	var magazineName = prompt("Название вашего магазина?","");
 	
 	if ((typeof(magazineName)) === 'string' && magazineName != '' && magazineName.length < 50) {
  		console.log('Все верно!');
@@ -54,7 +54,7 @@ for (let i = 0; i < 1; i++) {
 
 for (let i = 0; i < 5; i++) {
 	
-	let a = prompt("Какой тип товаров будем продавать?");
+	let a = prompt("Какой тип товаров будем продавать?","");
 	
 	if ((typeof(a)) === 'string' && a != '' && a.length < 50) {
 		console.log('Все верно!');

@@ -158,22 +158,11 @@ var mainList = {
 // mainList.workTime(9);
 // mainList.getDiscount();
 // mainList.recruitEmployers();
-// mainList.chooseShopItems();
-// mainList.shopItems.forEach( function chooseShopItems(item) {
-// 	alert("У нас вы можете купить: " + item);	
-// });
-
-// for (var item in mainList.shopItems) {
-// 	console.log("Наш магазин влючает в себя: " + mainList.shopItems[item]);
-// }
-var arr = [];
-
-function showMeNum(value) {
-
-	for (var i = 2; i <= 100; i++) {
-		arr.push(i + " : " + "Делители этого числа: 1 и " + i);
-	}
-}
-arr.forEach( function showMeNum() {
-	console.log(arr);
+mainList.chooseShopItems();
+mainList.shopItems.forEach( function chooseShopItems(item) {
+	alert("У нас вы можете купить: " + item);	
 });
+
+for (var item in mainList.shopItems) {
+	console.log("Наш магазин влючает в себя: " + mainList.shopItems[item]);
+}

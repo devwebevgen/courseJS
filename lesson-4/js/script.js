@@ -166,5 +166,14 @@ var mainList = {
 // for (var item in mainList.shopItems) {
 // 	console.log("Наш магазин влючает в себя: " + mainList.shopItems[item]);
 // }
-var arr = [2,,99];
-console.log(arr);
+var arr = [];
+
+function showMeNum(value) {
+
+	for (var i = 2; i <= 100; i++) {
+		arr.push(i + " : " + "Делители этого числа: 1 и " + i);
+	}
+}
+arr.forEach( function showMeNum() {
+	console.log(arr);
+});

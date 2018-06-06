@@ -158,11 +158,13 @@ var mainList = {
 // mainList.workTime(9);
 // mainList.getDiscount();
 // mainList.recruitEmployers();
-mainList.chooseShopItems();
-mainList.shopItems.forEach( function chooseShopItems(item) {
-	alert("У нас вы можете купить: " + item);	
-});
+// mainList.chooseShopItems();
+// mainList.shopItems.forEach( function chooseShopItems(item) {
+// 	alert("У нас вы можете купить: " + item);	
+// });
 
-for (var item in mainList.shopItems) {
-	console.log("Наш магазин влючает в себя: " + mainList.shopItems[item]);
-}
+// for (var item in mainList.shopItems) {
+// 	console.log("Наш магазин влючает в себя: " + mainList.shopItems[item]);
+// }
+var arr = [2,,99];
+console.log(arr);

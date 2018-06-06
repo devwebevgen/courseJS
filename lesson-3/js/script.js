@@ -21,7 +21,7 @@ function start () {
 	time = 19;
 
 	while (isNaN(budget) || budget == '' || budget == null) {
-		budget = prompt("Ваш бюджет за месяц?");
+		budget = prompt("Ваш бюджет за месяц?",'');
 	}
 
 	for (let i = 0; i < 1; i++) {	
@@ -61,7 +61,11 @@ function chooseGoods() {
 			mainList.shopGoods[i] = a;
 		} else {
 			console.log('Не верно! Введите заново');
+<<<<<<< HEAD
 			--i;
+=======
+			--i;	
+>>>>>>> 62e9db797efdf55a59d7872b27825ad80140f3dc
 			}	
 	}
 }

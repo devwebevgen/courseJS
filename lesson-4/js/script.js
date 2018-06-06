@@ -21,7 +21,7 @@ var mainList = {
 		time = 19;
 
 		while (isNaN(budget) || budget == '' || budget == null) {
-			budget = prompt("Ваш бюджет за месяц?");
+			budget = prompt("Ваш бюджет за месяц?", '');
 		}
 
 		for (let i = 0; i < 1; i++) {	

@@ -17,7 +17,7 @@ var mainList = {
 	discount: true,
 	start: function start () {
 		budget = prompt("Ваш бюджет за месяц?",'');
-		magazineName = prompt("Название вашего магазина?").toUpperCase();
+		magazineName = prompt("Название вашего магазина?", '').toUpperCase();
 		time = 19;
 
 		while (isNaN(budget) || budget == '' || budget == null) {

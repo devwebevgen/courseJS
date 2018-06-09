@@ -30,7 +30,7 @@ var sum = 0;
 
 for (var i = 0; i <= arr.length; i++) {
 
-	if (typeof arr[i] === 'number') {
+	if (typeof arr[i] === "number") {
 		arr[i] = Math.pow(arr[i],3);
 		sum += arr[i];
 	}

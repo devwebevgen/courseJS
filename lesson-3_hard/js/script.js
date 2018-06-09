@@ -3,9 +3,7 @@ var arr;
 var strChanged;
 var arrChanged;
 
-
 arr = str.split("р");
-
 
 var strSplited = arr[0].toUpperCase();
 arr.unshift(strSplited + "р");
@@ -27,13 +25,15 @@ strChanged = strChanged.join(' ');
 alert(strChanged);
 
 // Новый массив:
-arr = [20, 33, 1, 'Человек', 2, 3];
+var arr = [20, 33, 1, 'Человек', 2, 3];
 var sum = 0;
 
-for (var i = 0; i < arr.length; i++) {
+for (var i = 0; i <= arr.length; i++) {
 
-	arr[i] = Math.pow(arr[i],3);
-	sum += arr[i];
+	if (typeof arr[i] === 'number') {
+		arr[i] = Math.pow(arr[i],3);
+		sum += arr[i];
+	}
 }
 
 console.log(Math.sqrt(sum));
@@ -47,8 +47,10 @@ function takeArg(arg) {
 	} else {
 		alert("Все оК");
 	}
-	arg = arg.trim();	
-	arg = arg.substr(0, 50) + "(...)";	
+	arg = arg.trim();
+	if (arg.length > 50) {	
+		arg = arg.substr(0, 50) + "(...)";	
+	}
 	alert(arg);
 }
 takeArg(prompt('Впишите', ''));

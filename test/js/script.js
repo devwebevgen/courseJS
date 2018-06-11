@@ -1,18 +1,6 @@
-var arr = [];
+let nowDate = new Date(),	
+	showDate = document.createElement('div');
 
-function natNums(from, to) {
-	top:
- 	for (var i = from; i < to; i++) {
- 			
-	  	for (var x = i-1; x > 1; x--) { 
-		    	
-			if (i % x == 0) {			    	
-		    	continue top;			    	
-	    	}
-		}	
-    	arr.push(i);    	
-	}   
-}
-natNums(1, 100);
+document.body.appendChild(showDate);	
+showDate.innerHTML = nowDate;
 
-console.log(arr);

@@ -723,7 +723,5 @@ header ul li:before {
 }
 .else {
   padding: 10px;
-  color: white;
-  background: transparent;
-  cursor: pointer;
+  color: white !important;
 }

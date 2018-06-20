@@ -1,9 +1,9 @@
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', () => {
 	
 	let tab = document.getElementsByClassName('info-header-tab'),
 		tabContent = document.getElementsByClassName('info-tabcontent'),
 		info = document.getElementsByClassName('info-header')[0],
-		btnLearnMore = document.querySelector('.info');
+		btnLearnMore = document.querySelector('.info');		
 
 	function hideTabContent (a) {
 		for (let i = a; i< tabContent.length; i++) {
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		}
 	}
 
-	info.addEventListener('click', function(event) {
+	info.addEventListener('click', (event) => {
 		let target = event.target;
 		if (target.className == 'info-header-tab') {
 			for (let i = 0; i < tab.length; i++) {
@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	setClock('timer', deadline);
 	//modal
 
-	var more = document.querySelector('.more'),
+	let more = document.querySelector('.more'),
 		overlay = document.querySelector('.overlay'),
 		close = document.querySelector('.popup-close');
 
@@ -94,7 +94,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	}		
 	more.addEventListener('click', myEv);
 	
-	close.addEventListener('click', function() {
+	close.addEventListener('click', () => {
 		overlay.style.display = 'none';
 		this.classList.remove('more-splash');
 		document.body.style.overflow = '';
@@ -102,10 +102,10 @@ window.addEventListener('DOMContentLoaded', function() {
 
 	
 
-	btnLearnMore.onclick = function(event) {
-		var target = event.target;
-		if (target.className != 'description-btn') return;
+	btnLearnMore.onclick = (event) => {
+		let target = event.target;
 
+		if (target.className != 'description-btn') return;
 		myEv(target);
 	};
 });
